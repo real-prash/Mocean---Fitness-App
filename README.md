@@ -2,7 +2,7 @@
 ![Static Badge](https://img.shields.io/badge/fitness%20app-orange)
 
 # Mocean
-Mocean is a fitnes app helping people achieve their health and fitness goals.
+Mocean is a fitness app helping people achieve their health and fitness goals.
 
 # How to run
 Pull the project from main or download as a zip file
