@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mocean"
+        tools:targetApi="31">
+        <activity
+            android:name=".presentation.WorkoutExercises"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.CreateFood"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.FoodSearch"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.Profile"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".presentation.Home"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.Login"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.CreateAccount"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.TrackWorkoutsActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.NewWorkoutsActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.SampleWorkoutsActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.PreviousWorkoutsActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.PushWorkoutActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.PullWorkoutActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.LegsWorkoutActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.UpdateInfo"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustNothing" />
+    </application>
+
+</manifest>

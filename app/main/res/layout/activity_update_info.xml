@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/default_activity_relative_layout"
+    android:id="@+id/activity_update_info"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.UpdateInfo">
+
+    <include layout="@layout/default_screen_settings"/>
+
+    <LinearLayout
+        style="@style/default_linear_layout"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="top"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical">
+
+        <!-- Header. -->
+        <TextView
+            style="@style/default_header"
+            android:text="@string/update_info"
+            android:textSize="68sp"/> <!-- The normal 70sp for headers pushes this to 2 lines. -->
+
+        <!-- Height. -->
+        <LinearLayout
+            style ="@style/update_linear_layout_inline">
+
+            <TextView
+                style="@style/default_edit_text_inline"
+                android:text="@string/height_with_units"/>
+
+            <EditText
+                style="@style/default_edit_text"
+                android:id="@+id/height_edittext"
+                android:hint="@string/height_with_units"
+                android:inputType="numberDecimal"
+                android:layout_width="350dp"/>
+
+        </LinearLayout>
+
+        <!-- Weight. -->
+        <LinearLayout
+            style ="@style/update_linear_layout_inline">
+
+            <TextView
+                style="@style/default_edit_text_inline"
+                android:text="@string/weight_with_units"/>
+
+            <EditText
+                style="@style/default_edit_text"
+                android:id="@+id/weight_edittext"
+                android:hint="@string/weight_with_units"
+                android:inputType="numberDecimal"
+                android:layout_width="350dp"/>
+
+        </LinearLayout>
+
+        <!-- Age. -->
+        <LinearLayout
+            style ="@style/update_linear_layout_inline">
+
+            <TextView
+                style="@style/default_edit_text_inline"
+                android:text="@string/age"/>
+
+            <EditText
+                style="@style/default_edit_text"
+                android:id="@+id/age_edittext"
+                android:hint="@string/age"
+                android:inputType="numberDecimal"
+                android:layout_width="350dp"/>
+
+        </LinearLayout>
+
+        <!-- Submit button. -->
+        <Button
+            style="@style/default_button"
+            android:id="@+id/submit_button"
+            android:text="@string/submit"
+            android:layout_marginTop="50dp"/>
+
+        <!-- Return button. -->
+        <Button
+            style="@style/default_button"
+            android:id="@+id/return_button"
+            android:text="@string/go_back"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/navigation_bar" />
+
+</RelativeLayout>

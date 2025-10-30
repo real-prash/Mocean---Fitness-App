@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="track_workouts_header">Track Workouts</string>
+    <string name="new_workout">Add Workout</string>
+    <string name="previous_workout">Workouts</string>
+</resources>

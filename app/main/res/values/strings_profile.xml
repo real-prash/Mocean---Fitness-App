@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="height_title">Height:</string>
+    <string name="weight_title">Weight:</string>
+    <string name="age_title">Age:</string>
+    <string name="calorie_title">Daily Calorie Limit:</string>
+    <string name="update_info">Update Information</string>
+    <string name="logout">Logout</string>
+</resources>

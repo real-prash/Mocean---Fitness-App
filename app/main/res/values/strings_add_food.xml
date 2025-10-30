@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_food_header">Add Food</string>
+    <string name="food_name_hint">Food Name</string>
+    <string name="quantity_hint">Quantity (Grams)</string>
+    <string name="calories_hint">Calories</string>
+    <string name="carbs_hint">Carbs</string>
+    <string name="fats_hint">Fats</string>
+    <string name="proteins_hint">Proteins</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <style name="Base.Theme.Mocean" parent="Theme.Material3.DayNight.NoActionBar"/>
+    <style name="Theme.Mocean" parent="Base.Theme.Mocean" />
+</resources>

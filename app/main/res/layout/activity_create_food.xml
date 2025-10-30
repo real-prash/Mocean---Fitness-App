@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_food_act"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/default_screen_settings"/>
+
+    <LinearLayout
+        style="@style/default_linear_layout"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!-- Header. -->
+        <TextView
+            style="@style/default_header"
+            android:id="@+id/create_food_heading"
+            android:text="@string/add_food_header"/>
+
+        <!-- Food name input. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/add_food_name"
+            android:hint="@string/food_name_hint"
+            android:inputType="text"/>
+
+        <!-- Food groups spinner. -->
+        <Spinner
+            style="@style/default_spinner"
+            android:id="@+id/food_groups"
+            android:theme="@style/spinner_theme"/>
+
+        <!-- Quantity (grams) input. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/add_food_quantity"
+            android:hint="@string/quantity_hint"
+            android:inputType="number"/>
+
+        <!-- Calories input. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/add_food_calories"
+            android:hint="@string/calories_hint"
+            android:inputType="number"/>
+
+        <!-- Carbs input. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/add_food_carbs"
+            android:hint="@string/carbs_hint"
+            android:inputType="number"/>
+
+        <!-- Fats input. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/add_food_fats"
+            android:hint="@string/fats_hint"
+            android:inputType="number"/>
+
+        <!-- Protein input. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/add_food_protein"
+            android:hint="@string/proteins_hint"
+            android:inputType="number"/>
+
+        <!-- Submission buttons. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingVertical="10dp"
+            android:orientation="vertical">
+
+            <!-- Submit button. -->
+            <Button
+                style="@style/default_button"
+                android:id="@+id/add_food_submit_button"
+                android:text="@string/submit"/>
+
+            <!-- Return button. -->
+            <Button
+                style="@style/default_button"
+                android:id="@+id/add_food_return_button"
+                android:text="@string/go_back"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/navigation_bar" />
+
+</RelativeLayout>

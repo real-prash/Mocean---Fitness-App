@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_percentage">0%</string>
+    <string name="add_food">Add New Food</string>
+    <string name="search_food">Search for Food</string>
+    <string name="reset_cals">Reset Calories</string>
+</resources>

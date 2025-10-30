@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.Profile">
+
+    <include layout="@layout/default_screen_settings"/>
+
+    <LinearLayout
+        style="@style/default_linear_layout"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity=""
+        android:paddingTop="100dp">
+
+        <!-- Username -->
+        <TextView
+            style="@style/profile_text"
+            android:id="@+id/username_textview"
+            android:text="@string/username"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <!-- Height -->
+        <TextView
+            style="@style/profile_text"
+            android:id="@+id/height_textview"
+            android:text="@string/height_title"/>
+
+        <!-- Weight -->
+        <TextView
+            style="@style/profile_text"
+            android:id="@+id/weight_textview"
+            android:text="@string/weight_title"/>
+
+        <!-- Age -->
+        <TextView
+            style="@style/profile_text"
+            android:id="@+id/age_textview"
+            android:text="@string/age_title"/>
+
+        <!-- Calories -->
+        <TextView
+            style="@style/profile_text"
+            android:id="@+id/calorie_limit_textview"
+            android:text="@string/calorie_title"/>
+
+        <!-- Update button -->
+        <Button
+            style="@style/default_button"
+            android:id="@+id/update_info_button"
+            android:text="@string/update_info"
+            android:layout_marginTop="50dp"/>
+        <Button
+            style="@style/default_button"
+            android:id="@+id/logout"
+            android:text="@string/logout"
+            android:layout_marginTop="50dp"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/navigation_bar" />
+
+</RelativeLayout>

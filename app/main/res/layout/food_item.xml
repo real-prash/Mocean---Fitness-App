@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="4dp">
+
+    <RelativeLayout
+        android:id="@+id/food_item_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/card_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/text_view_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/card_image_view"
+            android:text="@string/food_name"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_1"
+            android:layout_toEndOf="@id/card_image_view"
+            android:text="@string/food_category"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/text_view_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_2"
+            android:layout_toEndOf="@id/card_image_view"
+            android:text="@string/food_calories_title"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/text_view_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_2"
+            android:layout_toEndOf="@id/text_view_3"
+            android:text="@string/default_calories"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/foodID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="0sp"
+            android:text=""/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_home_layout"
+    style="@style/default_activity_relative_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.Home">
+
+    <include layout="@layout/default_screen_settings"/>
+
+    <LinearLayout
+        style="@style/default_linear_layout"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!-- Calorie progress bar (circular) -->
+        <RelativeLayout
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:gravity="center">
+
+            <!-- The progress circle itself. -->
+            <ProgressBar
+                style="@style/progress_circle"
+                android:id="@+id/calorie_progress_bar"/>
+
+            <!-- Percentage calorie ratio. -->
+            <TextView
+                style="@style/progress_text"
+                android:id="@+id/text_progress"
+                android:textSize="75sp"
+                android:text="@string/default_percentage"/>
+
+            <!-- Exact calorie ratio. -->
+            <TextView
+                style="@style/progress_text"
+                android:id="@+id/text_progress_2"
+                android:layout_below="@id/text_progress"
+                android:paddingTop="20dp"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <!-- Add new food button. -->
+        <Button
+            style="@style/default_button"
+            android:id="@+id/calorie_add_button"
+            android:text="@string/add_food"/>
+
+        <!-- Search for food button. -->
+        <Button
+            style="@style/default_button"
+            android:id="@+id/food_add_button"
+            android:text="@string/search_food"/>
+        <Button
+            style="@style/default_button"
+            android:backgroundTint="@color/red"
+            android:id="@+id/reset_cals"
+            android:text="@string/reset_cals"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/navigation_bar"/>
+
+</RelativeLayout>

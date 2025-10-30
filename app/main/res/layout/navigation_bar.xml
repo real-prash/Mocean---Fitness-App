@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@color/secondary_color"
+    android:layout_alignParentBottom="true">
+
+    <!-- Left Button -->
+    <ImageButton
+        style="@style/navigation_bar_image_button"
+        android:id="@+id/food_button"
+        app:srcCompat="@drawable/knife_and_spoon"/>
+
+    <!-- Center Button -->
+    <ImageButton
+        style="@style/navigation_bar_image_button"
+        android:id="@+id/weight_button"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/dumbbell"/>
+
+    <!-- Right Button -->
+    <ImageButton
+        style="@style/navigation_bar_image_button"
+        android:id="@+id/settings_button"
+        app:srcCompat="@drawable/user"/>
+
+</LinearLayout>

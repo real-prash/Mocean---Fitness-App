@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_track_workouts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.TrackWorkoutsActivity">
+
+    <include layout="@layout/default_screen_settings"/>
+
+    <LinearLayout
+        style="@style/default_linear_layout"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="200dp">
+
+        <!-- Header. -->
+        <TextView
+            style="@style/default_header"
+            android:text="@string/track_workouts_header"/>
+
+        <!-- New workouts button. -->
+        <Button
+            style="@style/workout_button"
+            android:id="@+id/track_new_workout_button"
+            android:text="@string/new_workout"
+            android:layout_marginTop="100dp"/>
+
+        <!-- Previous workouts button. -->
+        <Button
+            style="@style/workout_button"
+            android:id="@+id/previous_workout_button"
+            android:text="@string/previous_workout"
+            android:layout_marginTop="43dp"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/navigation_bar"/>
+
+</RelativeLayout>

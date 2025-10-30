@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_account">Create Account</string>
+    <string name="height_with_units">Height (Centimeters)</string>
+    <string name="weight_with_units">Weight (Kilograms)</string>
+    <string name="sex_radio_header">Sex:</string>
+</resources>

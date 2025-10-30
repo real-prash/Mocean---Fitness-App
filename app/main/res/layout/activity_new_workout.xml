@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_workout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.NewWorkoutsActivity"
+    android:isScrollContainer="false">
+
+    <include layout="@layout/default_screen_settings"/>
+
+    <TextView
+        android:id="@+id/new_workout_heading"
+        android:fontFamily="arial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Workout"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/new_workout_name"
+        style="@style/default_edit_text"
+        android:hint="Enter workout name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/etExerciseName"
+        style="@style/default_edit_text"
+        android:hint="Enter exercise name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/etSets"
+        style="@style/default_edit_text"
+        android:inputType="number"
+        android:hint="Enter number of sets"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/etReps"
+        style="@style/default_edit_text"
+        android:inputType="number"
+        android:hint="Enter number of reps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:padding="15dp" />
+
+
+    <Button
+        android:id="@+id/btnAddExercise"
+        style="@style/workout_button"
+        android:layout_width="179dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/etReps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Add Exercise"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnSaveWorkout"
+        style="@style/workout_button"
+        android:layout_width="171dp"
+        android:layout_height="74dp"
+        android:layout_below="@id/btnAddExercise"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Save Workout"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#FFFFFF"
+        android:id="@+id/separator"
+        android:layout_marginTop="700dp"
+        android:layout_marginBottom="10dp" />
+
+    <ListView
+        android:id="@+id/lvAddedExercises"
+        android:layout_width="700dp"
+        android:layout_height="450dp"
+        android:layout_below="@id/separator"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"/>
+
+    <include layout="@layout/navigation_bar"/>
+
+</RelativeLayout>

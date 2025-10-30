@@ -1,0 +1,37 @@
+<resources>
+    <!-- Mocean. -->
+    <string name="app_name">Mocean</string>
+
+    <!-- User information -->
+    <string name="login">login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="age">Age</string>
+
+    <!-- Submission buttons, -->
+    <string name="go_back">Return</string>
+    <string name="submit">Submit</string>
+
+    <!-- Sex. -->
+    <string name="m">M</string>
+    <string name="f">F</string>
+    <string name="x">X</string>
+
+    <!-- Change. -->
+    <string name="change_username">Change Username</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_height">Change Height</string>
+    <string name="change_weight">Change Weight</string>
+
+    <!-- Food groups -->
+    <string-array name="food_groups_array">
+        <item>Fruits and Vegetables</item>
+        <item>Grains</item>
+        <item>Protein</item>
+        <item>Dairy</item>
+        <item>Oils</item>
+        <item>Empty Calories</item>
+    </string-array>
+</resources>

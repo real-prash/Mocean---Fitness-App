@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/default_activity_relative_layout"
+    android:id="@+id/activity_create_account"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.CreateAccount">
+
+    <include layout="@layout/default_screen_settings"/>
+
+    <LinearLayout
+        style="@style/default_linear_layout"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!-- Header. -->
+        <TextView
+            style="@style/default_header"
+            android:text="@string/create_account"/>
+
+        <!-- Username. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/username_edittext"
+            android:hint="@string/username"
+            android:inputType="text"/>
+
+        <!-- Password. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/password_edittext"
+            android:hint="@string/password"/>
+
+        <!-- Height. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/height_edittext"
+            android:hint="@string/height_with_units"
+            android:inputType="numberDecimal"/>
+
+        <!-- Weight. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/weight_edittext"
+            android:hint="@string/weight_with_units"
+            android:inputType="numberDecimal"/>
+
+        <!-- Age. -->
+        <EditText
+            style="@style/default_edit_text"
+            android:id="@+id/age_edittext"
+            android:hint="@string/age"
+            android:inputType="number"/>
+
+        <!-- Radio group. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sex_group"
+            android:paddingLeft="30dp"
+            android:paddingVertical="30dp">
+
+            <TextView
+                style="@style/default_radio_text_inline"
+                android:id="@+id/text_before_radio_group"
+                android:text="@string/sex_radio_header"/>
+
+            <RadioGroup
+                android:id="@+id/sex_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/default_radio_button"
+                    android:id="@+id/male_radio_button"
+                    android:text="@string/m"/>
+
+                <RadioButton
+                    style="@style/default_radio_button"
+                    android:id="@+id/female_radio_button"
+                    android:text="@string/f"/>
+
+                <RadioButton
+                    style="@style/default_radio_button"
+                    android:id="@+id/intersex_radio_button"
+                    android:text="@string/x"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Submit button. -->
+        <Button
+            style="@style/default_button"
+            android:id="@+id/create_account_submit_button"
+            android:text="@string/submit"/>
+
+        <!-- Return button. -->
+        <Button
+            style="@style/default_button"
+            android:id="@+id/return_button"
+            android:text="@string/go_back"/>
+
+    </LinearLayout>
+</RelativeLayout>
