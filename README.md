@@ -2,7 +2,7 @@
 ![Static Badge](https://img.shields.io/badge/fitness%20app-orange)
 
 # Mocean
-Mocean is a fitness app helping people achieve their health and fitness goals.
+Mocean is an android based fitness app helping people achieve their health and fitness goals. Collaborated with a four-member team, part of Software Engineering 1 (COMP-3350) coursework.
 
 # How to run
 Pull the project from main or download as a zip file
